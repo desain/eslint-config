@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "ESLint config for personal projects",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "pnpm run clean && copyfiles index.js index.d.ts dist"
+  },
+  "keywords": [],
+  "author": "desain",
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0",
+  "peerDependencies": {
+    "eslint": ">= 9"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^6.0.1"
+  },
+  "dependencies": {
+    "eslint-plugin-prefer-arrow-functions": "^3.6.2",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.0.0",
+    "typescript-eslint": "^8.31.1"
+  }
+}
